@@ -1,3 +1,14 @@
+:root {
+  --background-color: #260701;
+
+  --border-radius: 6px;
+  --padding: 10px;
+
+  --font-size-h1: ;
+  --font-size-h2: ;
+  --font-size-p: ;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -6,16 +17,142 @@
   list-style: none;
 }
 
+body {
+  margin: 10px;
+}
+
 header {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: violet;
   padding: 20px;
+  border-radius: var(--border-radius);
 }
 
 header > nav > ul {
   display: flex;
   gap: 26px;
+}
+
+#wallpaper {
+  background-image: url(./assets/wallpaper.jpg);
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+  border-radius: var(--border-radius);
+}
+
+#wallpaper > img {
+  height: 60vh;
+  width: 100%;
+}
+
+#wallpaper > .presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 250px;
+  gap: 0.5rem;
+}
+
+main {
+  height: 25vh;
+  width: 100%;
+  border-radius: var(--border-radius);
+  margin-top: 20px;
+}
+
+main > section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+main > section > div {
+  height: 320px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--border-radius);
+}
+
+main > section > .color1 > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main > section > .color2 > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main > section > .color3 > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main > section > .color1 {
+  background-image: url(/assets/cafe1.jpg);
+  background-size: cover;
+}
+
+main > section > .color2 {
+  background-image: url(/assets/dulce2.jpg);
+  background-size: cover;
+}
+
+main > section > .color3 {
+  background-image: url(/assets/tarta.jpg);
+  background-size: cover;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  border-radius: var(--border-radius);
+  gap: 0.5rem;
+  padding: var(--padding);
+}
+
+#products {
+  display: grid;
+  grid-template-columns: 600px 400px 600px;
+  grid-template-rows: 600px 600px 600px;
+  column-gap: 10px;
+  row-gap: 15px;
+  justify-items: center;
+  padding: 20px;
+}
+
+#products > div > img {
+  max-width: 800px;
+  height: 500px;
+  border-radius: var(--border-radius);
+}
+
+#information {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: var(--padding);
+  margin-top: 40px;
+}
+
+#information > .image > img {
+  height: 700px;
+  width: 500px;
+  border-radius: var(--border-radius);
 }
