@@ -218,7 +218,6 @@ button:hover {
   justify-content: space-around;
   padding: var(--padding);
   margin-top: 40px;
-  background-color: var(--background-color-section);
   border-radius: var(--border-radius);
 }
 
