@@ -196,10 +196,8 @@ button:hover {
 
 #products {
   display: grid;
-  grid-template-columns: 600px 400px 600px;
-  grid-template-rows: 600px 600px 600px;
-  column-gap: 10px;
-  row-gap: 15px;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 30px;
   justify-items: center;
   padding: 20px;
 }
@@ -284,7 +282,7 @@ footer > .terms > ul {
   gap: 2rem;
 }
 
-@media (max-width: 375px) {
+@media screen and (max-device-width: 375px) {
   header > nav {
     display: none;
   }
@@ -360,5 +358,54 @@ footer > .terms > ul {
     display: flex;
     flex-direction: column;
     text-align: center;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+  #wallpaper > .presentation {
+    width: max-content;
+    padding: 30%;
+  }
+
+  main > section > .color1 > div {
+    text-align: center;
+  }
+
+  #products {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #information {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #information > .text > .info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #work > .content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    width: 100%;
+    height: 150px;
+  }
+
+  footer {
+    margin-top: 40px;
+  }
+
+  footer > .terms {
+    margin-left: -80px;
+  }
+
+  footer > .terms > ul > li > a {
+    font-size: 14px;
   }
 }
