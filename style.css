@@ -122,7 +122,7 @@ main > section {
   gap: 1.5rem;
 }
 
-main > section > div {
+main > section > article {
   height: 320px;
   width: 500px;
   display: flex;
@@ -197,10 +197,10 @@ button:hover {
 main > #products {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 260px;
+  row-gap: 60px;
   justify-items: center;
   padding: 20px;
-  margin-top: 100px;
+  margin-top: 40px;
 }
 
 main > #products > div {
@@ -220,7 +220,7 @@ main > #information {
   align-items: center;
   justify-content: space-around;
   padding: var(--padding);
-  margin-top: 360px;
+  margin-top: 100px;
   border-radius: var(--border-radius);
 }
 
@@ -240,7 +240,7 @@ main > #information > .text > .info {
   height: 200px;
 }
 
-main > #information > .image > img {
+main > #information > div > img {
   height: 700px;
   width: 500px;
   border-radius: var(--border-radius);
@@ -252,7 +252,7 @@ main > #work {
   border-radius: var(--border-radius);
   display: flex;
   justify-content: center;
-  margin-top: 230px;
+  margin-top: 80px;
 }
 
 main > #work > .content {
@@ -344,7 +344,7 @@ main > #work > .content > div {
     padding: 30%;
   }
 
-  main > section > .color1 > div {
+  main > section > article > div {
     text-align: center;
   }
 
@@ -356,7 +356,6 @@ main > #work > .content > div {
   main > #information {
     display: flex;
     flex-direction: column;
-    gap: 200px;
     margin: 0;
     margin-top: 100px;
   }
@@ -378,6 +377,13 @@ main > #work > .content > div {
   }
 }
 
+@media (min-width: 830px) and (max-width: 1200px) {
+  main > #products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media screen and (max-width: 830px) {
   header > nav {
     display: none;
@@ -390,7 +396,10 @@ main > #work > .content > div {
   main > #products {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 30rem;
+  }
+
+  main > #products > div {
+    text-align: center;
   }
 
   main > #products > div > img {
@@ -399,7 +408,7 @@ main > #work > .content > div {
   }
 
   main > #information {
-    margin-top: 420px;
+    margin-top: 20px;
   }
 
   main > #information > .image > img {
