@@ -194,6 +194,15 @@ button:hover {
   cursor: pointer;
 }
 
+main > #information .text > .info > a {
+  background-color: rgba(95, 72, 72, 0.575);
+  color: whitesmoke;
+  width: 8em;
+  padding: 10px;
+  text-align: center;
+  border-radius: var(--border-radius);
+}
+
 main > #products {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -271,7 +280,30 @@ main > #work > .content > div {
   gap: 0.5rem;
 }
 
+main > #work > .content > .button > a {
+  background-color: rgba(95, 72, 72, 0.575);
+  color: whitesmoke;
+  width: 8em;
+  padding: 10px;
+  text-align: center;
+  border-radius: var(--border-radius);
+}
+
 @media (max-width: 620px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 80%;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   header > nav {
     display: none;
   }
@@ -282,22 +314,48 @@ main > #work > .content > div {
 
   main > #wallpaper {
     background-image: url(/assets/galletas.jpg);
+    width: 450px;
+    height: 400px;
   }
 
-  main > section {
-    display: flex;
-    flex-direction: column;
+  main > #wallpaper > .presentation {
+    width: 400px;
+  }
+
+  main > #wallpaper > .presentation > h1 {
+    font-size: 25px;
+  }
+
+  main > #wallpaper > .presentation > p {
+    font-size: 18px;
+  }
+
+  main > #wallpaper > .presentation > a {
+    font-size: 14px;
+  }
+
+  main > #menu {
+    width: 460px;
   }
 
   main > #products {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    row-gap: 16rem;
+    margin-bottom: 260px;
+  }
+
+  main > #products > div {
+    width: 300px;
+    height: 260px;
   }
 
   main > #information {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    width: 445px;
   }
 
   main > #information > .text {
@@ -306,11 +364,11 @@ main > #work > .content > div {
 
   main > #information > .image > img {
     width: auto;
-    height: 650px;
+    height: 450px;
   }
 
-  main > #menu > div {
-    width: 400px;
+  main > #menu > article {
+    width: 100%;
   }
 
   main > #work {
@@ -319,18 +377,19 @@ main > #work > .content > div {
     justify-content: center;
     align-items: center;
     height: 200px;
+    width: 445px;
+    margin-top: 20px;
   }
 
   main > #work > .content {
     display: flex;
     flex-direction: column;
-    width: fit-content;
+    width: 200px;
     gap: 1rem;
   }
 
   main > #work > .content > div {
     text-align: center;
-    padding: 10px;
   }
 
   main > #work > .content > div > p {
